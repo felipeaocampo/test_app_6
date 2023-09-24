@@ -17,10 +17,6 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
-  # GET /articles/1/edit
-  def edit
-  end
-
   # POST /articles or /articles.json
   def create
     @article = Article.new(article_params)
@@ -34,6 +30,10 @@ class ArticlesController < ApplicationController
         format.json { render json: @article.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  # GET /articles/1/edit
+  def edit
   end
 
   # PATCH/PUT /articles/1 or /articles/1.json
