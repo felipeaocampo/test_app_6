@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+@import "custom.bootstrap.scss";
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between !important;
+}
+
+.form-inline.my-2.my-lg-0 {
+  display: flex;
+}

@@ -1,5 +1,16 @@
-<h1>This is the about page</h1>
+<%= render('layouts/navigation')%>
 
+<%#   background-image: url(<%= asset_path 'jumbo-copy.png' %>
+
+<div class="container" id="homecontainer">
+  <div class="jumbotron" style="background-image: url(<%= asset_path "jumbo-copy.jpg" %>)">
+    <h1>Hello, world!</h1>
+    <p class="page">This is a simple hero unit, a simple jombotron-style component</p>
+    <hr>
+    <p>It uses utility classes for typography and spacing to space content out</p>
+    <a class="home-btn" href="#" role="button">Learn more</a>
+  </div>
+</div>
 <%= link_to 'About Page', about_path %>
 <br/>
 <%= link_to 'Articles Page', articles_path %>
