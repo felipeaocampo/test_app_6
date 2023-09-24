@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  # before_action :set_article, only: %i[ show edit update destroy ]
+  before_action :set_article, only: %i[ show edit update destroy ]
 
   # GET /articles or /articles.json
   def index
@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1 or /articles/1.json
   def show
-    @article = Article.find(params[:id])
+    # @article = Article.find(params[:id])
     
   end
 
@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
-      # @article = Article.find(params[:id])
+      @article = Article.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
